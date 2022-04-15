@@ -1,5 +1,5 @@
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
 export async function get() {
-    return { body: {name: 'urutrutt'}}
+    return { body: {name: Math.random()}}
 }
