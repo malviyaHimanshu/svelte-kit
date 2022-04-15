@@ -1,17 +1,3 @@
-<script context="module">
-    /** @type {import('@sveltejs/kit').Load}*/
-    export const load = async ({fetch}) => {
-        const req = await fetch('/api/temp');
-        const data = await req.json();
-
-        return {
-            props: {
-                hello: data
-            }
-        }
-    }
-</script>
-
 <script>
     export let hello;
 
